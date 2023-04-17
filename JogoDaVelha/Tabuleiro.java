@@ -16,7 +16,7 @@ public class Tabuleiro {
         return null;
     }
 
-    public boolean Validacao(string p){
+    public boolean Validacao(String p){
         for (int li = 0; li < 3; li++){
             for (int co = 0; co < 3; co++){
                 if (m[li][co].equals(p)){
@@ -27,7 +27,7 @@ public class Tabuleiro {
         return false;
     }
 
-    public void Jogada(string p, string j){
+    public void Jogada(String p, String j){
         if (p.equals("1")){
             m[0][0] = j;
         }else if (p.equals("2")){
@@ -50,9 +50,9 @@ public class Tabuleiro {
 
     }
 
-    public string Ganhou(int jogadas){
-        string[] T = new string[8];
-        string vencedor = "null";
+    public String Ganhou(int jogadas){
+        String[] T = new String[8];
+        String vencedor = "null";
 
         if (jogadas == 9){
             vencedor = "EMPATE";

@@ -8,12 +8,30 @@ public class JogoDaVelha {
         Tabuleiro campo = new Tabuleiro();
         boolean jogo = true;
 
+
+        System.out.print("Jogador 1 => Digite seu simbolo: ");
+        String simbolo1 = entrada.nextLine();
+
+        System.out.print("Jogador 2 => Digite seu simbolo: ");
+        String simbolo2 = entrada.nextLine();
+
         while(jogo){
             campo.Mostrar();
-            System.out.print("Digite a casa que você quer jogar: ");
-            int jogada = entrada.nextInt();
-            campo.Jogada(jogada, "X");
+            System.out.print("Digite a casa que você quer jogar [jogador 1]: ");
+            String jogador1 = entrada.nextLine();
+            campo.Jogada(jogador1, simbolo1);
 
+            campo.Mostrar();
+
+            System.out.println("-=-=-=-==-=-=-");
+
+            System.out.print("Digite a casa que você quer jogar [jogador 2]: ");
+            String jogador2 = entrada.nextLine();
+            campo.Jogada(jogador2, simbolo2);
+
+            campo.Mostrar();
+
+            System.out.println("-=-=-=-==-=-=-");
             
         }
 
