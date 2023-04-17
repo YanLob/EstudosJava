@@ -66,16 +66,16 @@ public class Tabuleiro {
         T[4] = m[0][1] + m[1][1] + m[2][1];
         T[5] = m[0][2] + m[1][2] + m[2][2];
 
-        T[3] = m[0][0] + m[1][1] + m[2][2];
-        T[4] = m[0][2] + m[1][1] + m[2][0];
+        T[6] = m[0][0] + m[1][1] + m[2][2];
+        T[7] = m[0][2] + m[1][1] + m[2][0];
 
         for (int i = 0; i < T.length; i++){
             if (T[i].equals("XXX")){
-                vencedor = "Jogador 1";
+                vencedor = "Jogador 1 Venceu";
             }
 
             else if (T[i].equals("OOO")){
-                vencedor = "Jogador 2";
+                vencedor = "Jogador 2 Venceu";
             }
         }
         return vencedor;
