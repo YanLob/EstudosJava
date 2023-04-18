@@ -7,39 +7,38 @@ public class JogoDaVelha {
         Scanner entrada = new Scanner(System.in);
         Tabuleiro campo = new Tabuleiro();
         boolean jogo = true;
-        int cont = 0;
+        int cont = 0, jogadas = 0;
 
         System.out.print("Jogador 1 => Digite seu simbolo: ");
-        String simbolo1 = entrada.nextLine();
+        String simbolo1 = entrada.next();
 
         System.out.print("Jogador 2 => Digite seu simbolo: ");
-        String simbolo2 = entrada.nextLine();
+        String simbolo2 = entrada.next();
         
+        campo.Mostrar();
+
         while(jogo){
             
-            System.out.print("Digite a casa que você quer jogar [jogador 1]: ");
-            String jogador1 = entrada.nextLine();
-            campo.Jogada(jogador1, simbolo1);
-            
-            cont++;
-            
-            campo.Mostrar();
-            
-            System.out.println("-=-=-=-==-=-=-");
-            System.out.println("    Vencedor: "+campo.Ganhou(cont));
-            
-            System.out.print("Digite a casa que você quer jogar [jogador 2]: ");
-            String jogador2 = entrada.nextLine();
-            campo.Jogada(jogador2, simbolo2);
-            
-            cont++;
-            
-            campo.Mostrar();
-            
-            System.out.println("-=-=-=-==-=-=-");
-            
+            do{
+                System.out.print("Digite a casa que você quer jogar [jogador 1]: ");
+                String posicao = entrada.next();
+                
+                campo.Mostrar();
+                
+                System.out.println("-=-=-=-==-=-=-");
+
+                while(!campo.Validacao(posicao)){
+                    System.out.print("Tente novamente!");
+                    System.out.print("Digite a casa que você quer jogar [jogador 1]: ");
+                    posicao = entrada.next();
+                    valido = 0;
+                }
+                campo.Jogada(posicao, simbolo1);
+
+            }while(valido == 0);
             
         }
         
+        System.out.println("    Vencedor: "+campo.Ganhou(cont));
     }
 }
