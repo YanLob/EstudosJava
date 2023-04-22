@@ -2,9 +2,19 @@ package oo;
 
 public class Pessoa {
     public int idade;
+    public String nome;
 
-    Pessoa(int idade){
+    Pessoa(String nome ,int idade){
+        Setnome(nome);
         SetIdade(idade);
+    }
+
+    public String Getnome(String nome){
+        return nome;
+    }
+
+    public void Setnome(String novoNome){
+        this.nome = novoNome;
     }
 
     public int GetIdade(){
