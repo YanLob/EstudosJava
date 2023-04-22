@@ -4,7 +4,7 @@ public class Pessoa {
     public int idade;
 
     Pessoa(int idade){
-        this.idade = idade;
+        SetIdade(idade);
     }
 
     public int GetIdade(){
@@ -12,6 +12,9 @@ public class Pessoa {
     }
 
     public void SetIdade(int novaIdade){
-        this.idade = novaIdade;
+        novaIdade = Math.abs(novaIdade);
+        if(novaIdade >= 0 && novaIdade <= 120){
+            this.idade = novaIdade;
+        }
     }
 }
