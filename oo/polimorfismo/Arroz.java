@@ -1,17 +1,17 @@
 package polimorfismo;
 
 public class Arroz {
-    public int peso;
+    public double peso;
 
-    public Arroz (int peso){
+    public Arroz (double peso){
         setPeso(peso);
     }
 
-    public int getPeso (){
+    public double getPeso (){
         return peso;
     }
 
-    public void setPeso (int peso){
+    public void setPeso (double peso){
         if (peso >= 0){
             this.peso = peso;
         }
