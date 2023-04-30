@@ -1,6 +1,6 @@
-package oo.composicao.desafio.teste;
+package composicao.desafio.teste;
 
-import oo.composicao.Carro;
+import composicao.Carro;
 
 public class CarroTeste {
 

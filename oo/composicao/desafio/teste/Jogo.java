@@ -1,8 +1,8 @@
-package oo.composicao.desafio.teste;
+package composicao.desafio.teste;
 
-import oo.heranca.Direcao;
-import oo.heranca.Heroi;
-import oo.heranca.Monstro;
+import heranca.Direcao;
+import heranca.Heroi;
+import heranca.Monstro;
 
 public class Jogo {
 

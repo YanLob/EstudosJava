@@ -1,4 +1,4 @@
-package oo.composicao;
+package composicao;
 
 import java.util.ArrayList;
 import java.util.List;

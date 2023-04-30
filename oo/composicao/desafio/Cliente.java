@@ -1,4 +1,4 @@
-package oo.composicao.desafio;
+package composicao.desafio;
 
 public class Cliente {
 }

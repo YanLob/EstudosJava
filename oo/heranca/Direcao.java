@@ -1,4 +1,4 @@
-package oo.heranca;
+package heranca;
 
 public enum Direcao {
 

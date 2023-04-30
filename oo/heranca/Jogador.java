@@ -1,4 +1,4 @@
-package oo.heranca;
+package heranca;
 
 public class Jogador {
     public int vida = 100;

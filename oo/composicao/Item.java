@@ -1,4 +1,4 @@
-package oo.composicao;
+package composicao;
 
 public class Item {
 

@@ -8,6 +8,7 @@ public class JogoDaVelha {
         Tabuleiro campo = new Tabuleiro();
         boolean jogo = true;
         int cont = 0, jogadas = 0;
+        int valido = 0;
 
         System.out.print("Jogador 1 => Digite seu simbolo: ");
         String simbolo1 = entrada.next();
