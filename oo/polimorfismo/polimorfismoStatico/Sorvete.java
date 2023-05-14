@@ -1,5 +1,7 @@
 package polimorfismo.polimorfismoStatico;
 
-public class Sorvete {
-    
+public class Sorvete extends Comida{
+    public Sorvete(double peso){
+        super(peso);
+    }
 }
