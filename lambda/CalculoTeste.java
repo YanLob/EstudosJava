@@ -8,5 +8,7 @@ public class CalculoTeste {
         calculo = new Multiplicar();
         System.out.println(calculo.executar(2, 3));  
 
+        System.out.println("Testando");
+
     }
 }
