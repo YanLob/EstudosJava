@@ -2,7 +2,5 @@ package lambda;
 
 public class Soma implements Calculo{
     @Override
-    public double executar(double a, double b) {
-        return a + b;
-    }
+    public double executar(double a, double b) { return a + b; }
 }
