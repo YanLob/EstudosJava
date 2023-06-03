@@ -17,5 +17,6 @@ public class CalculoTeste3 {
 
         BinaryOperator<Integer> calc = (x, y)-> { return x + y; };
         System.out.println(calc.apply(n1, n2));
+        
     }
 }
